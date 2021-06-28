@@ -1,9 +1,9 @@
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 const blogArticle = require('./models/blog_models')
 const blogArticleRouter = require('./routes/blog_routes')
-// const URI = require('./config/keys')
 const app = express()
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
