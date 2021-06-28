@@ -1,0 +1,22 @@
+<!-- blog_views/new.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../_extendables/head_links') %>
+    <title>New Post</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">New Article</h1>
+
+        <form action="/new" method="POST">
+            <%- include('_form_fields') %>
+        </form>
+    </div>
+    <hr>
+    <%- include('../_extendables/footer_scripts') %>
+</body>
+
+</html>

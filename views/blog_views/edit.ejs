@@ -1,0 +1,23 @@
+<!-- blog_views/edit.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../_extendables/head_links') %>
+    <title>Edit</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">Edit Article</h1>
+
+        <form action="/edit/<%= article.id %>?_method=PUT" method="POST">
+            <%- include('_form_fields') %>
+        </form>
+
+        <hr>
+        <%- include('../_extendables/footer_scripts') %>
+    </div>
+</body>
+
+</html>
